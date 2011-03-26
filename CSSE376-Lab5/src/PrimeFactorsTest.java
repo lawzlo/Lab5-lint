@@ -19,12 +19,12 @@ public class PrimeFactorsTest {
 	}
 	
 	@Test
-	public void testEmpty(){
+	public void testOne(){
 		assertEquals(list(), PrimeFactors.findThem(1));
 	}
 	
 	@Test
-	public void testOne(){
+	public void testTwo(){
 		assertEquals(list(2), PrimeFactors.findThem(2));
 		
 	}
@@ -35,6 +35,11 @@ public class PrimeFactorsTest {
 		
 	}
 	
+	@Test
+	public void testFour(){
+		assertEquals(list(2, 2), PrimeFactors.findThem(4));
+		
+	}
 	public ArrayList<Integer> list(int... ints){
 		
 		ArrayList<Integer> ret = new ArrayList<Integer>();
