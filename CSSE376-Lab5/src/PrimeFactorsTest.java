@@ -43,6 +43,11 @@ public class PrimeFactorsTest {
 		assertEquals(list(2, 3), PrimeFactors.findThem(6));
 		
 	}
+	
+	@Test
+	public void testNine() {
+		assertEquals(list(3, 3), PrimeFactors.findThem(9));
+	}
 
 	public ArrayList<Integer> list(int... ints) {
 
