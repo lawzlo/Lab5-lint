@@ -26,7 +26,12 @@ public class PrimesTest {
 		assertEquals(list(), Primes.find(1));
 	}
 	
-	
+	@Test
+	public void TestTwoAndThree(){
+		
+		assertEquals(list(2), Primes.find(2));
+		assertEquals(list(3), Primes.find(3));
+	}
 	
 	public ArrayList<Integer> list(int... ints) {
 

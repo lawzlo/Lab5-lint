@@ -11,6 +11,9 @@ public class Primes {
 	public static ArrayList<Integer> find(int n){
 		ArrayList<Integer> ans = new ArrayList<Integer>();
 		
+		if (n > 1)
+			ans.add(n);
+		
 		return ans;
 		
 	}
