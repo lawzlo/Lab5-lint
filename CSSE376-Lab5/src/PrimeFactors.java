@@ -13,7 +13,7 @@ public class PrimeFactors {
 		ArrayList<Integer> ans = new ArrayList<Integer>();
 		
 		if (n > 1)
-			ans.add(2);
+			ans.add(n);
 			
 			
 		return ans;	

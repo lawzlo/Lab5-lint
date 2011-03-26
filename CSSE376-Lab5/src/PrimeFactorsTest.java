@@ -18,12 +18,20 @@ public class PrimeFactorsTest {
 		assertTrue("Test if JUnit works well!", true);
 	}
 	
+	@Test
 	public void testEmpty(){
 		assertEquals(list(), PrimeFactors.findThem(1));
 	}
 	
+	@Test
 	public void testOne(){
 		assertEquals(list(2), PrimeFactors.findThem(2));
+		
+	}
+	
+	@Test
+	public void testThree(){
+		assertEquals(list(3), PrimeFactors.findThem(3));
 		
 	}
 	
