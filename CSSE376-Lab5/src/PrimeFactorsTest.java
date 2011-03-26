@@ -10,6 +10,7 @@ import org.junit.Test;
  * @author Tan. Created Mar 26, 2011.
  */
 public class PrimeFactorsTest {
+	
 	@Test
 	public void testJUnit() {
 		assertTrue("Test if JUnit works well!", true);
@@ -48,7 +49,13 @@ public class PrimeFactorsTest {
 	public void testNine() {
 		assertEquals(list(3, 3), PrimeFactors.findThem(9));
 	}
+	@Test
+	
+	public void testLastOne() {
+		assertEquals(list(5, 7, 7, 1327), PrimeFactors.findThem(325115));
+	}
 
+	
 	public ArrayList<Integer> list(int... ints) {
 
 		ArrayList<Integer> ret = new ArrayList<Integer>();

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * TODO Put here a description of what this class does.
+ * Find prime factors.
  * 
  * @author Tan. Created Mar 26, 2011.
  */
@@ -11,14 +11,9 @@ public class PrimeFactors {
 		ArrayList<Integer> ans = new ArrayList<Integer>();
 
 		for (int i = 2; n > 1; i++)
-			while (n % i == 0){
+			for (; n % i == 0; n /= i)
 				ans.add(i);
-				n /= i;
-			}
 		
-		if (n > 1)
-			ans.add(n);
-
 		return ans;
 
 	}
