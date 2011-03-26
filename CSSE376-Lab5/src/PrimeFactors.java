@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class PrimeFactors {
 	
-	public static ArrayList<Integer> findPrimeFactors(int n){
+	public static ArrayList<Integer> findThem(int n){
 		ArrayList<Integer> ans = new ArrayList<Integer>();
 		return ans;	
 		
