@@ -11,6 +11,11 @@ public class PrimeFactors {
 	
 	public static ArrayList<Integer> findThem(int n){
 		ArrayList<Integer> ans = new ArrayList<Integer>();
+		
+		if (n > 1)
+			ans.add(2);
+			
+			
 		return ans;	
 		
 		

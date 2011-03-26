@@ -22,6 +22,11 @@ public class PrimeFactorsTest {
 		assertEquals(list(), PrimeFactors.findThem(1));
 	}
 	
+	public void testOne(){
+		assertEquals(list(2), PrimeFactors.findThem(2));
+		
+	}
+	
 	public ArrayList<Integer> list(int... ints){
 		
 		ArrayList<Integer> ret = new ArrayList<Integer>();
