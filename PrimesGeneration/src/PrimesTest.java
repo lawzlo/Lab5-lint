@@ -38,8 +38,13 @@ public class PrimesTest {
 		assertEquals(list(2, 3), Primes.find(4));
 		assertEquals(list(2, 3, 5), Primes.find(6));
 	}
+
 	
-	
+	@Test
+	public void TestBiggerCases(){
+		assertEquals(list(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31), Primes.find(31));
+		assertEquals(list(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47), Primes.find(50));
+	}
 	
 	public ArrayList<Integer> list(int... ints) {
 
